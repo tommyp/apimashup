@@ -10,6 +10,7 @@ export default class extends React.Component {
     };
 
     this.handleClick = this.handleClick.bind(this);
+    this.handleClick();
   }
 
   async handleClick() {
@@ -36,8 +37,17 @@ export default class extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {this.state.apis.length > 0 && this.renderApis()}
+        <h1>apima.sh/up</h1>
+        <h2>What can you make with these?</h2>
+        <div class="apis">
+          {this.state.apis.length > 0 && this.renderApis()}
+        </div>
         <Randomise onClick={this.handleClick} />
+
+        <footer>
+          Made by <a href="http://tommyp.org">Tommy</a>. Data from{" "}
+          <a href="https://api.publicapis.org/">publicapis.org</a>
+        </footer>
       </React.Fragment>
     );
   }
