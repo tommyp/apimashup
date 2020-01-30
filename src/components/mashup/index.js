@@ -39,7 +39,12 @@ export default class extends React.Component {
     return (
       <React.Fragment>
         <h1>apima.sh/up</h1>
-        <h2>What can you make with these?</h2>
+        {this.state.apis.length > 0 && (
+          <h2>
+            What can you make with {this.state.apis[0].name} and{" "}
+            {this.state.apis[1].name}?
+          </h2>
+        )}
         <div class="apis">
           {this.state.apis.length > 0 && this.renderApis()}
         </div>
