@@ -32,7 +32,7 @@ export default class extends React.Component {
   }
 
   renderApis() {
-    return this.state.apis.map(api => <Api {...api} key={api.link} />);
+    return this.state.apis.map((api, idx) => <Api {...api} key={idx} />);
   }
 
   render() {
@@ -52,15 +52,29 @@ export default class extends React.Component {
 
         <footer>
           Made by{" "}
-          <a href="http://tommyp.org" target="_blank">
+          <a
+            href="https://tommyp.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Tommy
           </a>
           . Data from{" "}
-          <a href="https://api.publicapis.org/" target="_blank">
+          <a
+            href="https://api.publicapis.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             publicapis.org
           </a>
-          . Have you used this to make something?{" "}
-          <a href="http://twitter.com/tommypalm" target="_blank">
+          .
+          <br />
+          Have you used this to make something?{" "}
+          <a
+            href="https://twitter.com/tommypalm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Tell me!
           </a>
         </footer>
