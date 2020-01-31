@@ -51,8 +51,18 @@ export default class extends React.Component {
         <Randomise onClick={this.handleClick} />
 
         <footer>
-          Made by <a href="http://tommyp.org">Tommy</a>. Data from{" "}
-          <a href="https://api.publicapis.org/">publicapis.org</a>
+          Made by{" "}
+          <a href="http://tommyp.org" target="_blank">
+            Tommy
+          </a>
+          . Data from{" "}
+          <a href="https://api.publicapis.org/" target="_blank">
+            publicapis.org
+          </a>
+          . Have you used this to make something?{" "}
+          <a href="http://twitter.com/tommypalm" target="_blank">
+            Tell me!
+          </a>
         </footer>
       </React.Fragment>
     );
