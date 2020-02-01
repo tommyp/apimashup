@@ -45,7 +45,7 @@ export default class extends React.Component {
             {this.state.apis[1].name}?
           </h2>
         )}
-        <div class="apis">
+        <div className="apis">
           {this.state.apis.length > 0 && this.renderApis()}
         </div>
         <Randomise onClick={this.handleClick} />
