@@ -47,14 +47,21 @@ footer {
   padding-bottom: 20px;
 }
 
+.randomise {
+  padding-top: 30px;
+  clear: both;
+  display: block;
+}
+
 @media only screen and (max-width: 800px) {
   .api {
     float: none;
   }
 }
 
-.randomise {
-  padding-top: 30px;
-  clear: both;
-  display: block;
+@media only screen and (max-width: 600px) {
+  footer {
+    margin-top: 30px;
+    position: relative;
+  }
 }
