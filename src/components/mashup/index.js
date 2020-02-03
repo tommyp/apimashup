@@ -5,7 +5,6 @@ import Api from "../api";
 export default class extends React.Component {
   constructor(props) {
     super(props);
-    window.history.pushState({}, "API Mashup", "/up");
     this.state = {
       apis: []
     };
