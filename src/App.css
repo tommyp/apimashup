@@ -1,10 +1,13 @@
+.App {
+}
+
 body {
   background-color: #001;
-  color: #00ff00;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1.4em;
-  font-weight: bold;
   margin: 20px 0 0 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: #00ff00;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
 a {
@@ -20,13 +23,13 @@ a {
 button {
   -webkit-appearance: none;
   background: none;
-  border-radius: 5px;
   border: 1px solid #00ff00;
   color: #00ff00;
   font-family: "Courier New", Courier, monospace;
   font-size: 1em;
-  font-weight: bold;
   padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 button:focus {
