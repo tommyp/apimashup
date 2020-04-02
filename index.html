@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>API Mashup</title>
+    <meta
+      name="description"
+      content="API Mashup - helping you come up with stupid side projects since 2020"
+    />
+    <meta name="keywords" content="api mashup" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-38390408-7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-38390408-7");
+    </script>
+    <script src="./src/mashup.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      window.onload = () => {
+        const mashup = new Mashup();
+        mashup.handleClick();
+        document.getElementById("randomise").addEventListener("click", () => {
+          mashup.handleClick();
+        });
+      };
+    </script>
+  </head>
+
+  <body>
+    <h1>apima.sh/up</h1>
+    <div id="data"></div>
+    <div class="randomise">
+      <button id="randomise">Randomise</button>
+    </div>
+    <footer>
+      Made by
+      <a href="https://tommyp.org" target="_blank" rel="noopener noreferrer"
+        >Tommy</a
+      >. Data from
+      <a
+        href="https://api.publicapis.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >publicapis.org</a
+      >.
+      <br />
+      Have you used this to make something?
+      <a
+        href="https://twitter.com/tommypalm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Tell me!
+      </a>
+    </footer>
+  </body>
+</html>
